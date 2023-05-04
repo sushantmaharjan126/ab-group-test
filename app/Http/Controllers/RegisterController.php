@@ -3,10 +3,11 @@
 namespace App\Http\Controllers;
 
 use App\Models\Register;
-use App\Mails\ActivationEmail;
+use App\Mail\ActivationEmail;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Hash;
-use Illuminate\Support\Facades\Str;
+use Illuminate\Support\Str;
+use Illuminate\Support\Facades\Mail;
 
 class RegisterController extends Controller
 {
