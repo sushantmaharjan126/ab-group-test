@@ -49,7 +49,7 @@
                         <td>
                             
                             
-                            <a onclick="return confirm('Are you sure you want to delete?')" href="{{ url('register/destory/'.$register->id) }}" title="Delete"><i class="bx bx-trash me-1"></i></a>
+                            <a onclick="return confirm('Are you sure you want to delete?')" href="{{ url('register/destory/'.$register->user_id) }}" title="Delete"><i class="bx bx-trash me-1"></i></a>
                         </td>
                         </tr>
                         <?php $z++; ?>

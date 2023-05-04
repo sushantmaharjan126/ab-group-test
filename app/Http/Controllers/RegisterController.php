@@ -58,7 +58,7 @@ class RegisterController extends Controller
 
         $success = $register->save();
 
-        Mail::to(request('email'))->send(new ActivationEmail($register));
+        // Mail::to(request('email'))->send(new ActivationEmail($register));
 
         if($success){
             return redirect()->route('home')->with('success_message', 'Register saved successfully.');
@@ -69,7 +69,7 @@ class RegisterController extends Controller
 
     public function destory($id)
     {
-        $register = Register::find($id);
+        $register = Register::where('user_id', $id)->first();
 
         if($register){
             @unlink('uploads/registers/'.$register->profile_image);

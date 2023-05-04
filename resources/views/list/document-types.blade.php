@@ -32,7 +32,7 @@
                         <td>
                           
                             
-                            <a onclick="return confirm('Are you sure you want to delete?')" href="{{ url('document-types/destory/'.$type->id) }}" title="Delete"><i class="bx bx-trash me-1"></i></a>
+                            <a onclick="return confirm('Are you sure you want to delete?')" href="{{ url('document-types/destory/'.$type->document_type_id) }}" title="Delete"><i class="bx bx-trash me-1"></i></a>
                         </td>
                         </tr>
                         <?php $z++; ?>

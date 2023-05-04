@@ -40,7 +40,7 @@ class DocumentTypeController extends Controller
 
     public function destory($id)
     {
-        $document = DocumentType::find($id);
+        $document = DocumentType::where('document_type_id', $id)->first();
 
         if($document){
 
